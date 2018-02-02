@@ -15,7 +15,7 @@ const loadYaml = () => {
 }
 
 const connectToSplunk = () => {
-  return new splunkjs.Service(http, {
+  return new splunkjs.Service({
     scheme: 'http',
     host: process.env.HOST,
     port: process.env.PORT,
@@ -28,6 +28,7 @@ const connectToSplunk = () => {
 const main = () => {
   const yaml = loadYaml();
 
+  const service = connectToSplunk();
 
 
   console.log(yaml.name)
