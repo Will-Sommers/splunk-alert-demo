@@ -1,0 +1,9 @@
+name: service-500-report
+index: z-service
+search_string: responsecode=500
+exclusions:
+  - 
+    - exclusion: edge-case
+      ticket: WAR-1234 
+    - exclusion: edge-case-2
+      ticket: WAR-1235 
