@@ -7,3 +7,5 @@ exclusions:
       ticket: WAR-1234 
     - exclusion: edge-case-2
       ticket: WAR-1235 
+    - exclusion: edge-case-3
+      ticket: WAR-1236 
